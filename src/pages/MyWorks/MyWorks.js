@@ -2,16 +2,27 @@ import styled from 'styled-components';
 import WorkCard from '../../components/WorkCard/WorkCard';
 
 const WorksSection = styled.section`
-  padding: 1rem;
+  background-color: #f7f7f9;
+  padding: 4rem 1rem;
+`;
+
+const TitleContainer = styled.nav`
+  justify-content: center;
+  margin-bottom: 3rem;
+  display: flex;
 `;
 
 const Title = styled.h2`
-  
+  font-family: 'Crete Round', serif;
+  font-size: 2.5rem;
+  color: #1c1a19;
 `;
 
 const WorksContainer = styled.div`
-  display: flex;
+  align-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+  display: flex;
   gap: 1rem;
 `;
 
@@ -60,7 +71,9 @@ const works = [
 
 const MyWorks = () => (
   <WorksSection>
-    <Title>My recent works</Title>
+    <TitleContainer>
+      <Title>My recent works</Title>
+    </TitleContainer>
     <WorksContainer>
       {
         works.map((work) => (
