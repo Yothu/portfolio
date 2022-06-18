@@ -19,6 +19,11 @@ const Title = styled.h2`
   color: #1c1a19;
 `;
 
+const Separator = styled.hr`
+  border: 1px solid #dfe1e6;
+  margin-bottom: 3rem;
+`;
+
 const WorksContainer = styled.div`
   align-content: space-evenly;
   justify-content: center;
@@ -32,6 +37,7 @@ const MyWorks = () => (
     <TitleContainer>
       <Title>My recent works</Title>
     </TitleContainer>
+    <Separator />
     <WorksContainer>
       {
         works.details.map((work) => (

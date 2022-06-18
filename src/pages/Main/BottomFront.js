@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import data from '../../data/front-page.json';
 
 const Job = styled.span`
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff5e1;
 `;
 
 const Description = styled.p`
@@ -10,17 +14,8 @@ const Description = styled.p`
 
 const BottomFront = () => (
   <div>
-    <Job>I am a Web Developer</Job>
-    <Description>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    </Description>
+    <Job>{data.job}</Job>
+    <Description>{data.description}</Description>
   </div>
 );
 

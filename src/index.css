@@ -27,5 +27,6 @@ code {
     monospace;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&display=swap');
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');

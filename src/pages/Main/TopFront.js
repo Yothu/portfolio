@@ -1,18 +1,17 @@
 import styled from 'styled-components';
+import data from '../../data/front-page.json';
 
 const Title = styled.h1`
+  font-family: 'Crete Round', serif;
+  font-size: 3rem;
+  color: #f55800;
   margin: 0;
-  color: #f55800;
-`;
-
-const Name = styled.span`
-  color: #f55800;
 `;
 
 const TopFront = () => (
   <div>
-    <Title>Welcome!</Title>
-    <Name>I am David</Name>
+    <Title>{data.topTitle}</Title>
+    <Title>{data.bottomTitle}</Title>
   </div>
 );
 
