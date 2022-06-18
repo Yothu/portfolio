@@ -1,0 +1,103 @@
+{
+  "details": [
+    {
+      "title": "Reservify",
+      "description": "A hotel reservation app displays all the existing hotels and details of each hotel, allowing the user to reserve the hotel they want.",
+      "live": "https://reservify.netlify.app/",
+      "image": "https://live.staticflickr.com/65535/52154659700_48d41b3ef6_k.jpg",
+      "technologies": ["Ruby on rails", "React", "Redux", "Sass", "HTML", "CSS"],
+      "source": "https://github.com/Yothu/reservify-front-end",
+      "date": "June 2022",
+      "company": "Co-made",
+      "type": "Front-end"
+    },
+    {
+      "title": "Recipe App",
+      "description": "Web application that allows you to save recipes and shows the shopping list to create them!",
+      "live": "https://polar-everglades-19689.herokuapp.com/",
+      "image": "https://live.staticflickr.com/65535/52153172737_f2e97302e3_k.jpg",
+      "technologies": ["Ruby on rails", "HTML", "CSS"],
+      "source": "https://github.com/Yothu/recipe-app-capstone",
+      "date": "May 2022",
+      "company": "Co-made",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Budgets!",
+      "description": "Web application that allows you to record money transactions and separate them in categories ",
+      "live": "https://intense-mesa-48756.herokuapp.com/",
+      "image": "https://live.staticflickr.com/65535/52154104284_5d914bd4cf_k.jpg",
+      "technologies": ["Ruby on rails", "HTML", "CSS"],
+      "source": "https://github.com/Yothu/budget-app-capstone",
+      "date": "May 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Blog App!",
+      "description": "Blog Web Application that allows you to create posts and comments! First time using Rails, it has API endpoints to get, create posts and comments.",
+      "live": null,
+      "image": "https://live.staticflickr.com/65535/52153208377_8cc3c6565d_k.jpg",
+      "technologies": ["Ruby on rails", "HTML", "CSS", "API"],
+      "source": "https://github.com/Yothu/recipe-app-capstone",
+      "date": "April 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Space Traveler's Hub",
+      "description": "A Web application that showcases Rockets and Missions from the SpaceX API, you can reserve Rockets and join Missions to your profile.",
+      "live": "https://cosmos-travelers-hub.netlify.app/",
+      "image": "https://raw.githubusercontent.com/Yothu/space-travelers-hub/develop/space_travelers.png",
+      "technologies": ["React", "Redux", "HTML", "CSS", "Bootstrap"],
+      "source": "https://github.com/Yothu/space-travelers-hub",
+      "date": "March 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Math Magicians React",
+      "description": "Web application that allows you to calculate mathematics expressions",
+      "live": null,
+      "image": "https://live.staticflickr.com/65535/52154315663_62cff0109d_h.jpg",
+      "technologies": ["React", "Webpack","HTML", "CSS", "Bootstrap"],
+      "source": "https://github.com/Yothu/math-magicians-react",
+      "date": "March 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Bookstore - React",
+      "description": "Web Application that allows you to add and remove books! This project was created with the purpose of consolidating the creator's knowledge of React.",
+      "live": "https://bookstore-dhaivy.netlify.app/",
+      "image": "https://live.staticflickr.com/65535/51901947746_45564d6bc4_h.jpg",
+      "technologies": ["React", "Redux", "HTML", "CSS"],
+      "source": "https://github.com/Yothu/bookstore-react",
+      "date": "March 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    },
+    {
+      "title": "Yu-Gi-Oh! Card Database",
+      "description": "Web application that showcases Yu-Gi-Oh! card. You can like and comment cards.",
+      "live": "https://yothu.github.io/Yu-Gi-Oh--Card-Data-Base/dist/index.html",
+      "image": "https://live.staticflickr.com/65535/51902598245_22448e916b_h.jpg",
+      "technologies": ["Webpack","HTML", "CSS", "Bootstrap", "Javascript"],
+      "source": "https://github.com/Yothu/Yu-Gi-Oh--Card-Data-Base",
+      "date": "February 2022",
+      "company": "Co-made",
+      "type": "Full-stack"
+    },
+    {
+      "title": "EXPO SOFTWARE 2021 ~ 2022",
+      "description": "My first capstone project at Microverse's program! It is about an international Software Expo!",
+      "live": "https://yothu.github.io/expo-software-2021-2022/",
+      "image": "https://live.staticflickr.com/65535/51902281524_ab8c6e9e2e_h.jpg",
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "source": "https://github.com/Yothu/expo-software-2021-2022",
+      "date": "January 2022",
+      "company": "Selfmade",
+      "type": "Full-stack"
+    }
+  ]
+}
