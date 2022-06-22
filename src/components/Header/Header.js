@@ -3,15 +3,15 @@ import { IconContext } from 'react-icons';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = styled.nav`
-display: flex;
-padding: 0rem 1rem;
-align-items: center;
-background-color: #3e3c3c;
-justify-content: space-between;
+  display: flex;
+  padding: 0rem 1rem;
+  align-items: center;
+  background-color: #020B16;
+  justify-content: space-between;
 `;
 
 const NavTitle = styled.span`
-color: #fff;
+  color: #fff;
 `;
 
 const Header = () => {

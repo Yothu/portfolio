@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import TopFront from './TopFront';
 import BottomFront from './BottomFront';
 import MyWorks from '../MyWorks/MyWorks';
+import Planet from '../../components/Planet/Planet';
 
 const Main = styled.main`
   background-color: black;
@@ -11,7 +12,7 @@ const Main = styled.main`
 
 const FrontSection = styled.section`
   border-radius: 0 0 0 40px;
-  background-color: #1c1a19;
+  background-image: linear-gradient(to bottom, #020B16, #072141);
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -38,6 +39,7 @@ const MainPage = () => (
           <BottomFront />
           <SocialMedia />
         </FrontContainer>
+        <Planet />
       </FrontSection>
     </Main>
     <MyWorks />
