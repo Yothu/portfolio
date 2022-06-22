@@ -31,8 +31,8 @@ const FrontContainer = styled.div`
   padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
-  margin: 3rem 0;
+  justify-content: center;
+  margin: 3rem 2rem;
 `;
 
 const MainPage = () => (
