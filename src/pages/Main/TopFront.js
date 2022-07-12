@@ -3,9 +3,13 @@ import data from '../../data/front-page.json';
 
 const Title = styled.h1`
   font-family: 'Source Code Pro', monospace;
-  font-size: 3rem;
   color: #f55800;
+  font-size: 2.2rem;
   margin: 0;
+
+  @media (min-width: 425px) {
+    font-size: 3rem;
+  }
 `;
 
 const TopFront = () => (

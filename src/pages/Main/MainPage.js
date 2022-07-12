@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import TopFront from './TopFront';
 import BottomFront from './BottomFront';
 import MyWorks from '../MyWorks/MyWorks';
-import Planet from '../../components/Planet/Planet';
+// import Planet from '../../components/Planet/Planet';
 
 const Main = styled.main`
   background-color: black;
@@ -22,7 +22,7 @@ const Main = styled.main`
 
 const FrontSection = styled.section`
   background-image: linear-gradient(to bottom, #020B16, #072141);
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
   min-height: 100vh;
   display: grid;
 `;
@@ -45,7 +45,7 @@ const MainPage = () => (
           <BottomFront />
           <SocialMedia />
         </FrontContainer>
-        <Planet />
+        {/* <Planet /> */}
       </FrontSection>
     </Main>
     <MyWorks />
