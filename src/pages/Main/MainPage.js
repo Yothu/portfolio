@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import SocialMedia from '../../components/SocialMedia/SocialMedia';
-import Header from '../../components/Header/Header';
 import TopFront from './TopFront';
 import BottomFront from './BottomFront';
 import MyWorks from '../MyWorks/MyWorks';
@@ -37,7 +36,6 @@ const FrontContainer = styled.div`
 
 const MainPage = () => (
   <>
-    <Header />
     <Main>
       <FrontSection>
         <FrontContainer>

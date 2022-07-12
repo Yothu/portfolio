@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import Proptypes from 'prop-types';
+import cross from '../../assets/images/exit-icon.svg';
+import './ScrollBar.css';
 
 const OuterContainer = styled.nav`
   background-color: red;
@@ -19,12 +22,34 @@ const InnerContainer = styled.div`
   margin-top: 30px;
 `;
 
-const ScrollBar = () => (
-  <OuterContainer>
-    <InnerContainer>
-      asd
-    </InnerContainer>
-  </OuterContainer>
-);
+const CloseButton = styled.button`
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+`;
+
+const ScrollBar = ({ menuState, setMenuState }) => {
+  const closeMenu = () => {
+    setMenuState(!menuState);
+  };
+
+  return (
+    <OuterContainer
+      style={{
+        width: menuState ? '100%' : '0',
+      }}
+    >
+      <CloseButton onClick={closeMenu} type="button">
+        <img src={cross} alt="exit-icon" className="exit-icon" />
+      </CloseButton>
+      <InnerContainer>asd</InnerContainer>
+    </OuterContainer>
+  );
+};
+
+ScrollBar.propTypes = {
+  menuState: Proptypes.bool.isRequired,
+  setMenuState: Proptypes.func.isRequired,
+};
 
 export default ScrollBar;
