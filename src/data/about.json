@@ -1,0 +1,60 @@
+{
+  "description": "Hello I'm a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project that you need coded don't hesitate to contact me.",
+  "languages": [
+    {
+      "name": "HTML",
+      "icon": "a"
+    },
+    {
+      "name": "CSS",
+      "icon": "a"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "a"
+    },
+    {
+      "name": "Ruby",
+      "icon": "a"
+    },
+    {
+      "name": "Python",
+      "icon": "a"
+    },
+    {
+      "name": "Java",
+      "icon": "a"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "React",
+      "icon": "a"
+    },
+    {
+      "name": "Redux",
+      "icon": "a"
+    },
+    {
+      "name": "Ruby on Rails",
+      "icon": "a"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Git/Github"
+    },
+    {
+      "name": "Kanban"
+    },
+    {
+      "name": "Scrum"
+    },
+    {
+      "name": "Remote Work"
+    },
+    {
+      "name": "Pair-Programming"
+    }
+  ]
+}
