@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Personal from './Personal';
-import Skills from './Skills';
+import Abilities from './Abilities';
 
 const Main = styled.main`
   background-image: linear-gradient(to bottom, #020b16, #072141);
@@ -19,7 +19,7 @@ const About = () => (
   <Main>
     <FrontSection>
       <Personal />
-      <Skills />
+      <Abilities />
     </FrontSection>
   </Main>
 );
