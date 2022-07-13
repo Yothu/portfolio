@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Proptypes from 'prop-types';
-import ScrollBar from '../ScrollBar/ScrollBar';
 
 const Navbar = styled.nav`
   display: flex;
