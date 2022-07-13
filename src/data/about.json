@@ -3,27 +3,27 @@
   "languages": [
     {
       "name": "HTML",
-      "icon": "a"
+      "icon": "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png"
     },
     {
       "name": "CSS",
-      "icon": "a"
+      "icon": "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"
     },
     {
       "name": "JavaScript",
-      "icon": "a"
+      "icon": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
     },
     {
       "name": "Ruby",
-      "icon": "a"
+      "icon": "https://cdn4.iconfinder.com/data/icons/stash/128/ruby-512.png"
     },
     {
       "name": "Python",
-      "icon": "a"
+      "icon": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png"
     },
     {
       "name": "Java",
-      "icon": "a"
+      "icon": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
     }
   ],
   "frameworks": [
