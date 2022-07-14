@@ -13,6 +13,7 @@ const FrontSection = styled.section`
   flex-wrap: wrap;
   margin: 0 1rem;
   display: flex;
+  gap: 2rem;
 `;
 
 const About = () => (

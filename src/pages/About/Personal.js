@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import SocialMedia from '../../components/SocialMedia/SocialMedia';
 import data from '../../data/about.json';
+import resume from '../../assets/files/resume-eng.docx';
 
 const Container = styled.div`
   flex-basis: 18rem;
@@ -26,10 +27,11 @@ const ButtonContainer = styled.div`
 
 const Resume = styled.button`
   background-color: transparent;
-  padding: 1rem;
-  border-radius: 3rem;
   border-color: #e54ed0;
+  border-radius: 3rem;
+  cursor: pointer;
   color: #e54ed0;
+  padding: 1rem;
 `;
 
 const Personal = () => (
@@ -40,7 +42,9 @@ const Personal = () => (
       <SocialMedia />
     </Social>
     <ButtonContainer>
-      <Resume type="button">Get resume</Resume>
+      <Resume type="button">
+        <a href={resume} download="DavidV-Resume">Get resume</a>
+      </Resume>
     </ButtonContainer>
   </Container>
 );
