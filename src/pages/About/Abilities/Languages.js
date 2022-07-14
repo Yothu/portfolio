@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { BsChevronDown, BsChevronRight } from 'react-icons/bs';
 import { useState } from 'react';
-import data from '../../../data/about.json';
 import '../abilities.css';
+import PropTypes from 'prop-types';
 
 const SubContainer = styled.div`
   padding: 0rem 1rem;
@@ -24,23 +24,36 @@ const Slide = styled.button`
 
 const SubTitle = styled.h3``;
 
-const Elements = styled.div``;
+const Elements = styled.div`
+  display: flex;
+  height: 6rem;
+  transition: height 0.3s;
+  overflow: hidden;
+
+  /* &:active {
+    height: 0rem;
+  } */
+`;
 
 const Name = styled.p`
   color: white;
 `;
 
-const Languages = () => {
+const Languages = ({ title, data }) => {
   const [langSlide, setLangSlide] = useState(false);
+  const [clickStyle, setclickStyle] = useState('7rem');
 
   const clickLanguage = () => {
     setLangSlide(!langSlide);
+    if (clickStyle === '7rem') {
+      setclickStyle('0');
+    }
   };
 
   return (
     <div>
       <SubContainer>
-        <SubTitle>Languages</SubTitle>
+        <SubTitle>{title}</SubTitle>
         <Slide onClick={clickLanguage}>
           <IconContext.Provider value={{ size: 20, color: 'white' }}>
             {langSlide ? <BsChevronDown /> : <BsChevronRight />}
@@ -48,19 +61,24 @@ const Languages = () => {
         </Slide>
       </SubContainer>
       <Elements>
-        {data.languages.map((language) => (
-          <div key={language.name}>
+        {data.map((element) => (
+          <div key={element.name}>
             <img
-              src={language.icon}
-              alt={language.alt}
+              src={element.icon}
+              alt={element.alt}
               className="about-icon"
             />
-            <Name>{language.name}</Name>
+            <Name>{element.name}</Name>
           </div>
         ))}
       </Elements>
     </div>
   );
+};
+
+Languages.propTypes = {
+  data: PropTypes.instanceOf(Object).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Languages;
