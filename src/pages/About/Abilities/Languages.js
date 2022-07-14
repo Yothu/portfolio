@@ -60,7 +60,7 @@ const Languages = ({ title, data }) => {
           </IconContext.Provider>
         </Slide>
       </SubContainer>
-      <Elements>
+      <Elements style={{ height: langSlide ? '7rem' : '0rem' }}>
         {data.map((element) => (
           <div key={element.name}>
             <img
