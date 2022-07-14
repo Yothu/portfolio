@@ -1,0 +1,84 @@
+.planet {
+  height: 90%;
+  width: 90%;
+  max-width: 70vh;
+  z-index: 2;
+}
+
+.satelite-1 {
+  height: 5%;
+  position: absolute;
+  left: 0;
+  transform: scale(-1);
+  animation: orbit 5s infinite;
+}
+
+.satelite-2 {
+  height: 5%;
+  position: absolute;
+  animation: orbit 5s infinite;
+}
+
+.satelite-3 {
+  height: 5%;
+  position: absolute;
+  animation: diagonal-orbit 5s 2s infinite;
+  transform: rotate(90deg);
+}
+
+@keyframes diagonal-orbit {
+  0% {
+    left: 10%;
+    top: 10%;
+    z-index: 3;
+    transform: scaleX(-1);
+  }
+
+  25% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    left: 90%;
+    top: 90%;
+    z-index: 1;
+    transform: scaleX(1);
+  }
+
+  75% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    left: 10%;
+    top: 10%;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    left: 0%;
+    transform: scaleX(-1);
+    z-index: 3;
+  }
+
+  25% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(1);
+    left: 93%;
+    z-index: 1;
+  }
+
+  75% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    left: 0%;
+    transform: scaleX(-1);
+  }
+}

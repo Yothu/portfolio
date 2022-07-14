@@ -1,0 +1,65 @@
+{
+  "description": "Hello I'm a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project that you need coded don't hesitate to contact me.",
+  "languages": [
+    {
+      "name": "HTML",
+      "icon": "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png"
+    },
+    {
+      "name": "CSS",
+      "icon": "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
+    },
+    {
+      "name": "Ruby",
+      "icon": "https://cdn4.iconfinder.com/data/icons/stash/128/ruby-512.png"
+    },
+    {
+      "name": "Python",
+      "icon": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png"
+    },
+    {
+      "name": "Java",
+      "icon": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "React",
+      "icon": "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-512.png"
+    },
+    {
+      "name": "Redux",
+      "icon": "https://cdn2.iconfinder.com/data/icons/boxicons-logos/24/bxl-redux-512.png"
+    },
+    {
+      "name": "Ruby on Rails",
+      "icon": "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Git/Github",
+      "icon": "https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/github-square-512.png"
+    },
+    {
+      "name": "Kanban",
+      "icon": "https://cdn1.iconfinder.com/data/icons/bootstrap-fill-vol-2/16/kanban-fill-512.png"
+    },
+    {
+      "name": "Scrum",
+      "icon": "https://cdn4.iconfinder.com/data/icons/aami-web-internet/64/aami14-13-512.png"
+    },
+    {
+      "name": "Remote Work",
+      "icon": "https://cdn4.iconfinder.com/data/icons/contactless-society/512/untactcontactlessonline-20-512.png"
+    },
+    {
+      "name": "Pair-Programming",
+      "icon": "https://cdn2.iconfinder.com/data/icons/software-development-outline-1/60/Paired-Programming-pair-people-users-512.png"
+    }
+  ]
+}
