@@ -7,6 +7,10 @@ const Main = styled.main`
   align-items: center;
   display: flex;
   flex-grow: 1;
+
+  @media (min-width: 1024px) {
+    padding: 0rem 5%;
+  }
 `;
 
 const FrontSection = styled.section`

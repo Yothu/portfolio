@@ -5,6 +5,10 @@ import { useState } from 'react';
 import '../abilities.css';
 import PropTypes from 'prop-types';
 
+const Container = styled.div`
+  font-family: 'Source Code Pro', monospace;
+`;
+
 const SubContainer = styled.div`
   padding: 0rem 1rem;
   justify-content: space-between;
@@ -25,33 +29,34 @@ const Slide = styled.button`
 const SubTitle = styled.h3``;
 
 const Elements = styled.div`
-  display: flex;
-  height: 6rem;
   transition: height 0.3s;
+  align-items: center;
   overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  background-color: #ffe7f7;
+`;
 
-  /* &:active {
-    height: 0rem;
-  } */
+const Lang = styled.div`
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
 `;
 
 const Name = styled.p`
-  color: white;
+  color: black;
 `;
 
 const Languages = ({ title, data }) => {
   const [langSlide, setLangSlide] = useState(false);
-  const [clickStyle, setclickStyle] = useState('7rem');
 
   const clickLanguage = () => {
     setLangSlide(!langSlide);
-    if (clickStyle === '7rem') {
-      setclickStyle('0');
-    }
   };
 
   return (
-    <div>
+    <Container>
       <SubContainer>
         <SubTitle>{title}</SubTitle>
         <Slide onClick={clickLanguage}>
@@ -60,19 +65,19 @@ const Languages = ({ title, data }) => {
           </IconContext.Provider>
         </Slide>
       </SubContainer>
-      <Elements style={{ height: langSlide ? '7rem' : '0rem' }}>
+      <Elements style={{ height: langSlide ? '8.5rem' : '0rem' }}>
         {data.map((element) => (
-          <div key={element.name}>
+          <Lang key={element.name}>
             <img
               src={element.icon}
               alt={element.alt}
               className="about-icon"
             />
             <Name>{element.name}</Name>
-          </div>
+          </Lang>
         ))}
       </Elements>
-    </div>
+    </Container>
   );
 };
 
