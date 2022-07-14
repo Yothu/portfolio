@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Languages from './Abilities/Languages';
+import data from '../../data/about.json';
 
 const Container = styled.div`
   flex-basis: 25rem;
@@ -8,7 +9,9 @@ const Container = styled.div`
 
 const Abilities = () => (
   <Container>
-    <Languages />
+    <Languages title="Languages" data={data.languages} />
+    <Languages title="Frameworks" data={data.frameworks} />
+    <Languages title="Skills" data={data.skills} />
   </Container>
 );
 
