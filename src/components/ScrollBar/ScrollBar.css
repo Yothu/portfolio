@@ -1,3 +1,27 @@
 .exit-icon {
   width: 2.5rem;
 }
+
+.navlink {
+  font-size: 3rem;
+}
+
+.active {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #de76eb;
+}
+
+.inactive {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.inactive:hover {
+  color: antiquewhite;
+}

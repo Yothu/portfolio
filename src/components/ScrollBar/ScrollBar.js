@@ -1,10 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Proptypes from 'prop-types';
-import cross from '../../assets/images/exit-icon.svg';
 import './ScrollBar.css';
+import { BsXLg } from 'react-icons/bs';
+import { IconContext } from 'react-icons';
 
 const OuterContainer = styled.nav`
-  background-color: red;
+  background-image: linear-gradient(to bottom, #020b16, #072141);
   overflow-x: hidden;
   position: fixed;
   height: 100%;
@@ -16,16 +18,35 @@ const OuterContainer = styled.nav`
 
 const InnerContainer = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  top: 25%;
+  height: 100%;
   text-align: center;
-  margin-top: 30px;
 `;
 
 const CloseButton = styled.button`
   background-color: transparent;
+  border: transparent 2px solid;
+  padding: 0.5rem;
   cursor: pointer;
-  border: none;
+  margin: 1rem;
+  align-self: flex-end;
+  transition: border 0.5s;
+  transition: border-radius 0.5s;
+  display: flex;
+  justify-content: end;
+
+  &:hover {
+    border: white 2px groove;
+    border-radius: 50%;
+  }
+`;
+
+const Links = styled('div')`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 const ScrollBar = ({ menuState, setMenuState }) => {
@@ -39,10 +60,29 @@ const ScrollBar = ({ menuState, setMenuState }) => {
         width: menuState ? '100%' : '0',
       }}
     >
-      <CloseButton onClick={closeMenu} type="button">
-        <img src={cross} alt="exit-icon" className="exit-icon" />
-      </CloseButton>
-      <InnerContainer>asd</InnerContainer>
+      <InnerContainer>
+        <CloseButton onClick={closeMenu} type="button">
+          <IconContext.Provider value={{ size: 30, color: 'white' }}>
+            <BsXLg />
+          </IconContext.Provider>
+        </CloseButton>
+        <Links>
+          <NavLink
+            to="/"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          >
+            Main
+          </NavLink>
+          <NavLink
+            to="/about"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          >
+            About
+          </NavLink>
+        </Links>
+      </InnerContainer>
     </OuterContainer>
   );
 };
